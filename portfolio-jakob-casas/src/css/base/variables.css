@@ -17,6 +17,11 @@
     --spacing-14: 112px;
     --spacing-15: 120px;
 
+    /* borders */
+    --border-sm: 1px;
+    --border-md: 3px;
+    --border-lg: 5px;
+
     /* border radius */
     --border-radius-sm: 4px;
     --border-radius-md: 8px;
