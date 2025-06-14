@@ -1,0 +1,46 @@
+:root {
+    font-size: 18px;
+}
+
+/* Setting font */
+body {
+    font-family: 'Figtree', serif;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'DM Serif Text', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7.1rem;
+    letter-spacing: -2%;
+}
+
+h2 {
+    font-size: 2.483rem;
+}
+
+h3 {
+    font-size: 2.073rem;
+}
+
+h4 {
+    font-size: 1.72rem;
+}
+
+p {
+    font-size: 1rem;
+    letter-spacing: 7%;
+}
+
+.bold {
+    font-weight: 400;
+}
+
+.bolder {
+    font-weight: 600;
+}
+
+.boldest {
+    font-weight: 800;
+}
