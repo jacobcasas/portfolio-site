@@ -1,1 +1,6 @@
 /* Footer style */
+.footer {
+    width: 100vw;
+    height: 206px;
+    background-color: var(--color-gray-900);
+}
