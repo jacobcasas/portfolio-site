@@ -1,8 +1,26 @@
-.inqury-button {
+.inquiry-button {
     width: 259px;
     height: 65px;
     border: none;
     border-radius: var(--border-radius-sm);
     color: var(--color-gray-50);
     background-color: var(--color-red);
+}
+
+.send-button {
+    width: 191px;
+    height: 59px;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    color: var(--color-gray-50);
+    background-color: var(--color-indigo);
+}
+
+.success-button {
+    width: 259px;
+    height: 65px;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    color: var(--color-gray-50);
+    background-color: var(--color-cyan);
 }

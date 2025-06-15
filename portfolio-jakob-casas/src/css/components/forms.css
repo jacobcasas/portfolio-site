@@ -1,1 +1,15 @@
 /* Form styles */
+
+.name-input {
+    width: 283px;
+    height: 72px;
+    border: var(--border-sm);
+    border-radius: var(--border-radius-md);
+}
+
+.email-input {
+    width: 577px;
+    height: 72px;
+    border: var(--border-sm);
+    border-radius: var(--border-radius-md);
+}
