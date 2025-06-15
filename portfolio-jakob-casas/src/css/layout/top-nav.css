@@ -1,1 +1,31 @@
 /* Top nav style */
+body {
+    background-color: var(--color-gray-50);
+}
+
+.top-nav {
+    width: 100vw;
+    height: 133px;
+    background-color: var(--color-gray-50);
+    box-shadow: var(--sm-shadow);
+}
+
+.nav-container {
+    display: flex;
+    height: 133px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 var(--spacing-15);
+}
+
+.image-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-gray-200);
+}
+
+.pages-container {
+    display: flex;
+    gap: var(--spacing-9);
+}
+
