@@ -1,1 +1,66 @@
 /* Home page style */
+
+.home-page-container {
+    margin: var(--spacing-13);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    padding: 4rem 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero-container h1 {
+    z-index: 1;
+}
+
+.name-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.name-container h1 {
+    padding: 0 2rem;
+}
+
+.hero-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    z-index: 2;
+}
+
+.hero-image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(to top, #f4f4f8, transparent);
+    z-index: 3;
+    pointer-events: none;
+}
+
+.roles {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.roles h2 {
+    padding: 0 5.5rem;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 14rem;
+    width: 515px;
+}
