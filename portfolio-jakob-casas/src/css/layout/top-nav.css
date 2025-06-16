@@ -26,6 +26,6 @@ body {
 
 .pages-container {
     display: flex;
-    gap: var(--spacing-9);
+    gap: var(--spacing-6);
 }
 
