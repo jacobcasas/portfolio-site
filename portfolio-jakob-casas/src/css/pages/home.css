@@ -85,3 +85,11 @@
 .about-text p {
     padding: var(--spacing-2) 0 ;
 }
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
