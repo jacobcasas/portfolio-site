@@ -4,7 +4,7 @@
     margin: var(--spacing-13);
     display: flex;
     flex-direction: column;
-
+    gap: var(--spacing-container);
 }
 
 .hero-container {
@@ -92,4 +92,14 @@
     align-items: center;
 }
 
+.skill-row-1 {
+    display: flex;
+    gap: var(--spacing-8);
+    justify-content: center;
+    margin: var(--spacing-15) 0 var(--spacing-10);
+}
+
+.skill-row-2 {
+    width: 225px;
+}
 
