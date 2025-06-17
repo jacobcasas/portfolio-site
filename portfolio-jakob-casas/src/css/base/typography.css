@@ -44,3 +44,8 @@ p {
 .boldest {
     font-weight: 800;
 }
+
+.sm-text {
+    font-size: .873rem;
+    letter-spacing: 5%;
+}
