@@ -1,1 +1,15 @@
 /* About page style */
+
+.about-container {
+    margin: var(--spacing-13);
+    display: flex;
+    gap: var(--spacing-10);
+}
+
+.left-text {
+    max-width: 410px;
+}
+
+.left-text p {
+    margin: 2rem 0;
+}
