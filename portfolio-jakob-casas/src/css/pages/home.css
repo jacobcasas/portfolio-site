@@ -105,5 +105,44 @@
 
 /* project section */
 
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.project-content-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.project-title-description {
+    width: 253px;
+}
+
+.project-picture-display {
+    position: relative;
+    display: flex;
+}
+
+.project-picture-display::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    width: 90%;
+    height: 70%;
+    background-color: var(--color-cyan);
+    border-radius: var(--border-radius-lg);
+    z-index: 0;
+}
+
+.project-picture-display img {
+    position: relative;
+    z-index: 1;
+    max-width: 200px;
+    margin: 0 -25px;
+}
 

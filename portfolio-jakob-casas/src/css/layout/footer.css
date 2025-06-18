@@ -1,6 +1,26 @@
 /* Footer style */
 .footer {
+    position: relative;
     width: 100vw;
     height: 206px;
     background-color: var(--color-gray-900);
+}
+
+.footer-wrapper {
+    display: flex;
+    gap: var(--spacing-15);
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 44%;
+}
+
+.footer-icons {
+    display: flex;
+    gap: var(--spacing-3);
+    margin-right: 4rem;
+}
+
+.footer-icons img {
+    max-width: 24px;
 }
