@@ -12,7 +12,7 @@ fetch('../text/about-me-description.txt')
         paragraphs.forEach(paragraph => {
             paragraph = paragraph.replace(/\*\*\*(.*?)\*\*\*/g,'<strong><em>$1</em></strong>')
             const p = document.createElement('p');
-            p.textContent = paragraph.trim();
+            p.innerHTML = paragraph.trim();
             descriptionElement.appendChild(p);
         })
     })
