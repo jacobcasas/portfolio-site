@@ -25,11 +25,6 @@
     align-items: baseline;
 }
 
-.service-title img {
-    max-width: 247px;
-    max-height: 125px;
-}
-
 .inquiry-prompt {
     display: flex;
     align-items: center;
@@ -37,4 +32,13 @@
     gap: var(--spacing-15);
     margin: var(--spacing-5) 0;
     margin-left: 4rem;
+}
+
+/* App design service */
+
+.service-title-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
