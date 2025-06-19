@@ -56,10 +56,9 @@
     display: flex;
     justify-content: center;
     text-align: center;
-}
-
-.roles h2 {
-    padding: 0 5.5rem;
+    z-index: 4;
+    gap: var(--spacing-20);
+    margin-left: 1rem;
 }
 
 .intro {
