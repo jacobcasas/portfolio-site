@@ -1,1 +1,7 @@
 /* Portfolio page style */
+
+.portfolio-container {
+    margin: var(--spacing-13);
+    display: flex;
+    justify-content: space-between;
+}
