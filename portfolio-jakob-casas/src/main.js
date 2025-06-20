@@ -1,5 +1,5 @@
 //setting text for about me description
-fetch('../text/about-me-description.txt')
+fetch('src/text/about-me-description.txt')
     .then(response => response.text())
     .then(text => {
         const descriptionElement = document.getElementById('about-me-description');
