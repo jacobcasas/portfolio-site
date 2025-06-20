@@ -49,3 +49,7 @@ p {
     font-size: .873rem;
     letter-spacing: 5%;
 }
+
+.underline {
+    text-decoration: underline;
+}
