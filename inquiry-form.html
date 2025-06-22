@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry Form - Jakob Casas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+    <div class="top-nav">
+        <div class="nav-container">
+            <a href="../../index.html"><img src="src/img/svgs/logo-jcp.svg" alt="tea"></a>
+            <div class="pages-container">
+              <a href="services.html"><h2 class="text-accent">services</h2></a>
+              <a href="about.html"><h2 class="text-accent">about me</h2></a>
+              <a href="portfolio.html"><h2 class="text-accent">portfolio</h2></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="inquiry-page-container">
+        <h1 class="text-primary">I'd love to work with you</h1>
+        <form action="#" class="inquiry-form" method="POST">
+            <p class="form-intro">
+                Feel free to fill out the information provided and I’ll get to you in the next 48 hours. I’m excited to hear from you.
+            </p>
+
+            <label for="name">Name <span class="required">(required)</span></label>
+            <div class="name-fields">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+
+            <label for="email">Email <span class="required">(required)</span></label>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+
+            <fieldset>
+                <legend>What services are you interested in? <span class="required">(required)</span></legend>
+                <label><input type="checkbox" name="services" value="logo-design"> Logo Design</label>
+                <label><input type="checkbox" name="services" value="website-design"> Website Design</label>
+                <label><input type="checkbox" name="services" value="web-dev"> Website Design and Development</label>
+                <label><input type="checkbox" name="services" value="other"> Other/I'm Not Sure</label>
+            </fieldset>
+
+            <label for="comments">Any comments?</label>
+            <textarea name="comments" id="comments" rows="5" placeholder="Let me know any details..."></textarea>
+
+            <button class="send-button" type="submit">send</button>
+        </form>
+    </div>
+</body>
+</html>
