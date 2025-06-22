@@ -1,0 +1,83 @@
+/* Inquiry form styles */
+
+.inquiry-page-container {
+    display: flex;
+    flex-direction: row;
+    margin: var(--spacing-13);
+    gap: var(--spacing-5);
+}
+
+.inquiry-text {
+    flex: 1 1 300px;
+}
+
+.inquiry-form {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+label {
+    font-size: 2.073rem;
+    font-weight: 800;
+    color: var(--color-gray-800);
+    line-height: normal;
+}
+
+.required {
+    font-weight: normal;
+    font-size: 0.85rem;
+    color: var(--color-cyan);
+    margin-left: 0.4rem;
+}
+
+.name-fields {
+    display: flex;
+    gap: var(--spacing-1);
+}
+
+.name-fields input {
+    flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--color-gray-900);
+    border-radius: var(--border-radius-md);
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+fieldset legend {
+    font-size: 2.072rem;
+    color: var(--color-gray-800);
+    font-weight: 800;
+    margin-bottom: var(--spacing-2);
+    line-height: normal;
+}
+
+fieldset label {
+    display: block;
+    margin: 0.25rem 0;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
