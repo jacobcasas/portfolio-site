@@ -20,3 +20,7 @@
 .portfolio-row-photos {
     display: flex;
 }
+
+.loopcart-image-1 {
+    transform: rotate(22deg) translateY(-20px);
+}

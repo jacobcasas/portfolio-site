@@ -29,3 +29,38 @@ body {
     gap: var(--spacing-6);
 }
 
+#service-button {
+    cursor: pointer;
+}
+
+.nav-item-with-modal {
+    position: relative;
+    display: inline-block;
+}
+
+.services-modal {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color-gray-50);
+    border: 1px solid var(--color-cyan);
+    padding: 1rem;
+    box-shadow: var(--sm-shadow);
+    display: none;
+    z-index: 1000;
+    border-radius: var(--border-radius-md);
+    min-width: 180px;
+}
+
+.services-modal p {
+    cursor: pointer;
+    margin: 0 0 0.5rem;
+}
+
+.services-modal p:last-child {
+    margin-bottom: 0;
+}
+
+.services-modal.show {
+    display: block;
+}

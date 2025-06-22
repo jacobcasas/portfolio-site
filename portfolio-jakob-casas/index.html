@@ -17,14 +17,22 @@
     <div class="nav-container">
       <img src="src/img/svgs/logo-jcp.svg" alt="tea">
       <div class="pages-container">
-        <a href="brand-design.html"><h2 class="text-accent">services</h2></a>
+        <div class="nav-item-with-modal">
+          <h2 class="text-accent" id="service-button">services</h2>
+          <div class="services-modal">
+            <a href="web-design.html"><p class="text-accent boldest">Web Design</p></a>
+            <a href="app-design.html"><p class="text-accent boldest">App Design</p></a>
+            <a href="brand-design.html"><p class="text-accent boldest">Brand Identity</p></a>
+          </div>
+        </div>
         <a href="about.html"><h2 class="text-accent">about me</h2></a>
         <a href="portfolio.html"><h2 class="text-accent">portfolio</h2></a>
       </div>
     </div>
   </div>
+
   <div class="home-page-container">
-    <div class="hero-container">
+    <div class="hero-container fade-in">
       <div class="name-container">
         <h1 class="text-accent">Jakob</h1>
         <h1 class="text-accent">Casas</h1>
@@ -42,7 +50,7 @@
       </p>
     </div>
 
-    <div class="about-container">
+    <div class="about-container fade-in">
       <img src="src/img/svgs/blob-1.svg" alt="blobbbb">
       <div class="about-text">
         <p class="text-primary">
@@ -60,7 +68,7 @@
       </div>
     </div>
 
-    <div class="skill-container">
+    <div class="skill-container fade-in">
       <h2 class="text-secondary">some skills i have</h2>
       <div class="skill-row-1">
         <img src="src/img/svgs/js-card.svg" alt="javascript">
@@ -70,7 +78,7 @@
       <img class="skill-row-2" src="src/img/svgs/adobe-suite-card.svg" alt="adobe suite">
     </div>
 
-    <div class="project-container">
+    <div class="project-container fade-in">
       <h2 class="text-secondary">projects I've worked on</h2>
       <div class="project-content-right">
         <div class="project-title-description">
@@ -98,5 +106,7 @@
        <h3 class="text-accent">jakob@jakobcasas.com</h3>
     </div>
   </footer>
+
+  <script type="module" src="src/main.js"></script>
 </body>
 </html>
