@@ -7,6 +7,14 @@
     border-radius: var(--border-radius-sm);
     color: var(--color-gray-50);
     background-color: var(--color-red);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.inquiry-button:hover {
+    border: 3px solid var(--color-red);
+    background-color: var(--color-light-red);
+    color: var(--color-gray-900);
+    cursor: pointer;
 }
 
 .send-button {
