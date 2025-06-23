@@ -43,7 +43,7 @@ body {
     top: 100%;
     right: 0;
     background-color: var(--color-gray-50);
-    border: 1px solid var(--color-cyan);
+    border: 2px solid var(--color-cyan);
     padding: 1rem;
     box-shadow: var(--sm-shadow);
     display: none;

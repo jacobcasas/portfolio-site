@@ -41,6 +41,22 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+//transform blob home page functionality
+const blobHome = document.getElementById('blob-home');
+
+document.addEventListener('mousemove', e => {
+    const { clientX, clientY } = e;
+    const { left, top, width, height } = blobHome.getBoundingClientRect();
+
+    const centerX = left + width / 2;
+    const centerY = top + height / 2;
+
+    const offsetX = (clientX - centerX) * 0.01;
+    const offsetY = (clientY - centerY) * 0.01;
+
+    blobHome.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+});
+
 //setting text for about me description
 fetch('src/text/about-me-description.txt')
     .then(response => response.text())
