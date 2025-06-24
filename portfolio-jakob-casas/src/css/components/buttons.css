@@ -24,6 +24,14 @@
     border-radius: var(--border-radius-sm);
     color: var(--color-gray-50);
     background-color: var(--color-indigo);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.send-button:hover {
+    border: 3px solid var(--color-indigo);
+    background-color: var(--color-light-indigo);
+    color: var(--color-gray-900);
+    cursor: pointer;
 }
 
 .success-button {

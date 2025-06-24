@@ -3,6 +3,8 @@
 .portfolio-container {
     margin: var(--spacing-13);
     display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
 }
 
 .portfolio-row {
@@ -23,4 +25,8 @@
 
 .loopcart-image-1 {
     transform: rotate(22deg) translateY(-20px);
+}
+
+.contact-prompt {
+    text-align: center;
 }
