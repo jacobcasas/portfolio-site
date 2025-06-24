@@ -23,6 +23,10 @@
     display: flex;
 }
 
+.portfolio-row-photos img {
+    max-width: 177px;
+}
+
 .loopcart-image-1 {
     transform: rotate(22deg) translateY(-20px);
 }

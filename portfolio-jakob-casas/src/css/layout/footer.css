@@ -24,3 +24,8 @@
 .footer-icons img {
     max-width: 24px;
 }
+
+.email-contact:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

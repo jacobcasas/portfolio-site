@@ -121,6 +121,22 @@
     width: 253px;
 }
 
+.project-title-home {
+    position: relative;
+}
+
+.project-title-home::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    width: 56%;
+    height: 1.8rem;
+    background-color: #eecfd0;
+    transform: rotate(4deg);
+    z-index: -1;
+}
+
 .project-picture-display {
     position: relative;
     display: flex;
