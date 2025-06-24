@@ -3,12 +3,12 @@
 .portfolio-container {
     margin: var(--spacing-13);
     display: flex;
-    justify-content: space-between;
 }
 
 .portfolio-row {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: var(--spacing-8);
 }
 
