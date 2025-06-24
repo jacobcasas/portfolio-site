@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/main.css">
+    <link rel="icon" href="public/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
   <div class="top-nav">
@@ -33,7 +34,14 @@
 
     <div class="inquiry-page-container">
         <h1 class="inquiry-text | text-primary">I'd love <br> to work <br> with you</h1>
-        <form name="contact" data-netlify="true" action="/" class="inquiry-form" method="POST">
+        <form
+         name="contact" 
+         data-netlify="true" 
+         action="/" 
+         class="inquiry-form" 
+         method="POST" 
+         netlify-honeypot="bot-field"
+         >
           <input type="hidden" name="form-name" value="contact">
           <p class="form-intro">
               Feel free to fill out the information provided and I’ll get to you in the next 48 hours. I’m excited to hear from you.
@@ -58,6 +66,9 @@
 
           <label for="comments">Any comments?</label>
           <textarea name="comments" id="comments" rows="5" placeholder="Let me know any details..."></textarea>
+          <p style="display: none;">
+            <label>humans dont fill this out <input name="bot-field"></label>
+          </p>
           <button class="send-button | boldest" type="submit">send</button>
       </form>
     </div>
