@@ -57,6 +57,21 @@ document.addEventListener('mousemove', e => {
     blobHome.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 });
 
+//hidding navbar functionality
+let lastScrollY = window.scrollY;
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY < lastScrollY) {
+        navbar.classList.remove('nav-hidden');
+    } else {
+        if (window.scrollY > 100) {
+            navbar.classList.add('nav-hidden');
+        }  
+    }
+    lastScrollY = window.scrollY;
+});
+
 //setting text for about me description
 fetch('src/text/about-me-description.txt')
     .then(response => response.text())
