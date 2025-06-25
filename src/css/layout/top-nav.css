@@ -10,7 +10,7 @@
     height: 133px;
     background: var(--color-gray-50);
     box-shadow: var(--sm-shadow);
-    z-index: 100;
+    z-index: 99;
 }
 
 .nav-hidden {

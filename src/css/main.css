@@ -12,6 +12,7 @@
 /* Layout styles */
 @import url('layout/footer.css');
 @import url('layout/top-nav.css');
+@import url('layout/nav-module.css');
 
 /* Page styles */
 @import url('pages/about.css');

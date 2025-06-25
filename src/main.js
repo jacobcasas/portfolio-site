@@ -72,6 +72,67 @@ window.addEventListener('scroll', () => {
     lastScrollY = window.scrollY;
 });
 
+//Nav module functionality
+const hamburger = document.getElementById('hamburger-menu');
+const navModule = document.getElementById('nav-module');
+const servicesLink = document.getElementById('services-link');
+const navLinks = document.getElementById('nav-links');
+
+const backdrop = document.getElementById('backdrop');
+
+hamburger.addEventListener('click', () => {
+    navModule.classList.toggle('show');
+    backdrop.classList.toggle('show');
+    showMainLinks();
+});
+
+backdrop.addEventListener('click', () => {
+    navModule.classList.remove('show');
+    backdrop.classList.remove('show');
+})
+
+const showMainLinks = () => {
+    navLinks.classList.add('fade-out');
+
+    navLinks.addEventListener('transitionend', function handler() {
+        navLinks.removeEventListener('transitionend', handler);
+
+        navLinks.innerHTML = `
+            <h2 id="services-link" class="module-link text-accent">services</h2>
+            <a href="about.html"><h2 class="module-link text-accent">about me</h2></a>
+            <a href="portfolio.html"><h2 class="module-link text-accent">portfolio</h2></a>
+        `;
+
+        document.getElementById('services-link').addEventListener('click', showServiceLinks);
+
+        requestAnimationFrame(() => {
+            navLinks.classList.remove('fade-out');
+        })
+    })
+};
+
+const showServiceLinks = () => {
+    navLinks.classList.add('fade-out');
+
+    navLinks.addEventListener('transitionend', function handler() {
+        navLinks.removeEventListener('transitionend', handler);
+
+        navLinks.innerHTML = `
+            <h4 id="back-to-main" class="module-link text-invert">&lt; back</h4>
+            <a href="app-design.html"><h2 class="module-link text-accent">app design</h2></a>
+            <a href="brand-design.html"><h2 class="module-link text-accent">brand identity</h2></a>
+            <a href="web-design.html"><h2 class="module-link text-accent">web design</h2></a>
+        `;
+
+        document.getElementById('back-to-main').addEventListener('click', showMainLinks);
+
+        requestAnimationFrame(() => {
+            navLinks.classList.remove('fade-out');
+        });
+
+    });
+};
+
 //setting text for about me description
 fetch('src/text/about-me-description.txt')
     .then(response => response.text())
