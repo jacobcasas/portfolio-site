@@ -4,15 +4,17 @@
     width: 100vw;
     height: 206px;
     background-color: var(--color-gray-900);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 1rem;
 }
 
 .footer-wrapper {
     display: flex;
     gap: var(--spacing-15);
-    content: "";
-    position: absolute;
-    top: 40%;
-    left: 44%;
+    align-items: center;
+    justify-content: right;
 }
 
 .footer-icons {
@@ -28,4 +30,28 @@
 .email-contact:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .footer-wrapper {
+        width: 100%;
+        gap: var(--spacing-3);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-icons {
+        gap: var(--spacing-2);
+        margin-right: 0;
+    }
+
+    .footer-icons img {
+        max-width: 32px;
+    }
 }

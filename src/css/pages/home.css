@@ -15,7 +15,6 @@
     padding: 4rem 1rem;
     align-items: center;
     justify-content: center;
-
 }
 
 .hero-container h1 {
@@ -85,6 +84,8 @@
     padding: var(--spacing-2) 0 ;
 }
 
+/* skill section */
+
 .skill-container {
     display: flex;
     flex-direction: column;
@@ -100,6 +101,10 @@
 
 .skill-row-2 {
     width: 225px;
+}
+
+.skill-set-mobile {
+    display: none;
 }
 
 /* project section */
@@ -161,3 +166,105 @@
     margin: 0 -25px;
 }
 
+@media (max-width: 768px) {
+    .home-page-container {
+        margin: var(--spacing-5) var(--spacing-2);
+    }
+
+
+    /* hero section */
+    .name-container {
+        gap: 1rem;
+    }
+
+    .name-container h1{
+        padding: 0;
+    }
+
+    .hero-image::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 30%;
+        width: 100%;
+        background: linear-gradient(to top, #ffffff 30%, transparent 100%);
+        z-index: 3;
+        pointer-events: none;
+    }
+
+    .roles {
+        gap: var(--spacing-5);
+        z-index: 1;
+    }
+
+    .intro {
+        width: 80vw;
+    }
+
+    /* about me brief */
+    .about-container {
+        flex-direction: column;
+    }
+
+    #blob-home {
+        min-width: 260px;
+    }
+
+    .about-text {
+        width: 80vw;
+    }
+
+    /* skill section */
+    .skill-set-web {
+        display: none;
+    }
+
+    .skill-set-mobile {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 2rem;
+        padding: 1rem;
+        -webkit-overflow-scrolling: touch;
+        z-index: 5;
+    }
+
+    .skill-card-mobile {
+        flex: 0 0 80%;
+        scroll-snap-align: center;
+        width: 350px;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill-card-mobile:nth-child(3) {
+        padding-right: 2.2rem;
+    }
+
+    /* project section */
+    .project-container {
+        flex-direction: column;
+        gap: var(--spacing-4);
+    }
+
+    .project-section-title {
+        text-align: center;
+    }
+
+    .project-content-right {
+        gap: var(--spacing-2);
+    }
+
+    .project-picture-display::before {
+        left: 0px;
+        width: 100%;
+    }
+
+    .project-picture-display img {
+        max-width: 65px;
+        margin: 0 -15px;
+    }
+}

@@ -16,7 +16,7 @@
 <body>
   <div id="navbar" class="top-nav">
     <div class="nav-container">
-      <a href="."><img class="nav-link" src="src/img/svgs/logo-jcp.svg" alt="tea"></a>
+      <a href="."><img id="mochi" class="nav-link" src="src/img/svgs/logo-jcp.svg" alt="mochi"></a>
       <div class="pages-container">
         <div class="nav-item-with-modal">
           <h2 class="nav-link | text-accent" id="service-button">services</h2>
@@ -28,6 +28,9 @@
         </div>
         <a href="about.html"><h2 class="nav-link | text-accent">about me</h2></a>
         <a href="portfolio.html"><h2 class="nav-link | text-accent">portfolio</h2></a>
+      </div>
+      <div class="hamburger-menu">
+        <img src="src/img/svgs/hamburger.svg" alt="hamburger menu mobile">
       </div>
     </div>
   </div>
@@ -71,16 +74,24 @@
 
     <div class="skill-container fade-in">
       <h2 class="text-secondary">some skills i have</h2>
-      <div class="skill-row-1">
-        <img src="src/img/svgs/js-card.svg" alt="javascript">
-        <img src="src/img/svgs/html-css-card.svg" alt="html and css">
-        <img src="src/img/svgs/figma-card.svg" alt="figma">
+      <div class="skill-set-web">
+        <div class="skill-row-1">
+          <img src="src/img/svgs/js-card.svg" alt="javascript">
+          <img src="src/img/svgs/html-css-card.svg" alt="html and css">
+          <img src="src/img/svgs/figma-card.svg" alt="figma">
+        </div>
+        <img class="skill-row-2" src="src/img/svgs/adobe-suite-card.svg" alt="adobe suite">
       </div>
-      <img class="skill-row-2" src="src/img/svgs/adobe-suite-card.svg" alt="adobe suite">
+      <div class="skill-set-mobile">
+        <img class="skill-card-mobile" src="src/img/svgs/js-card.svg" alt="javascript">
+        <img class="skill-card-mobile" src="src/img/svgs/html-css-card.svg" alt="html and css">
+        <img class="skill-card-mobile" src="src/img/svgs/figma-card.svg" alt="figma">
+        <img class="skill-card-mobile" src="src/img/svgs/adobe-suite-card.svg" alt="adobe suite">
+      </div>
     </div>
 
     <div class="project-container fade-in">
-      <h2 class="text-secondary">projects I've worked on</h2>
+      <h2 class="project-section-title | text-secondary">projects I've worked on</h2>
       <div class="project-content-right">
         <div class="project-title-description">
           <h3 class="project-title-home | text-accent">LoopCart <span class="text-primary sm-text bold">may 2025</span></h3>
