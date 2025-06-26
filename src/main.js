@@ -23,7 +23,7 @@ serviceModal.addEventListener('mouseleave', (e) => {
 });
 
 
-//make the about me brief blob graphic move with cursor
+//fade in transition
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -31,7 +31,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-    threshold: 0.3,
+    threshold: 0.1,
     rootMargin: '0px 0px -30% 0px'
 });
 
