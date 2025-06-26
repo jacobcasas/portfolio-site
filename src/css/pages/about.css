@@ -1,7 +1,7 @@
 /* About page style */
 
 .about-container {
-    margin: var(--spacing-13);
+    margin: var(--spacing-container) var(--spacing-13);
     display: flex;
     gap: var(--spacing-10);
     align-items: center;
@@ -37,7 +37,7 @@
     left: 0;
     height: 60%;
     width: 100%;
-    background: linear-gradient(to top, #f4f4f8 0%, #f4f4f8 25%, transparent 100%);
+    background: linear-gradient(to top, #ffffff 30%, transparent 100%);
     z-index: 3;
     pointer-events: none;
 }

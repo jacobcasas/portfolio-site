@@ -1,7 +1,7 @@
 /* Services page style */
 
 .service-container {
-    margin: var(--spacing-10);
+    margin: var(--spacing-15);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-15);
@@ -23,6 +23,15 @@
     justify-content: center;
     gap: var(--spacing-7);
     align-items: baseline;
+}
+
+#brand-identity-img {
+    max-width: 250px;
+    margin-top: 3rem;
+}
+
+#web-design-img {
+    margin-top: 4rem;
 }
 
 .inquiry-prompt {
@@ -58,6 +67,11 @@
 
     #brand-identity-img {
         max-width: 150px;
+        margin-top: 0;
+    }
+
+    #web-design-img {
+        margin-top: 0;
     }
 
     .service-title {
