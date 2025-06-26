@@ -34,3 +34,17 @@
 .contact-prompt {
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .app-designs-category h2 {
+        margin-bottom: var(--spacing-8);
+    }
+
+    .portfolio-row {
+        gap: var(--spacing-2);
+    }
+
+    .portfolio-row-photos img {
+        max-width: 80px;
+    }
+}
