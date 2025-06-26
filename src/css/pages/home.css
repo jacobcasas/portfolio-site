@@ -228,7 +228,19 @@
         padding: 1rem;
         -webkit-overflow-scrolling: touch;
         z-index: 5;
-        scrollbar-width: thin;
+        scroll-snap-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .skill-card-mobile.nudge {
+        animation: nudege-card 2s ease forwards;
+    }
+
+    @keyframes nudege-card {
+        0% { transform: translateX(0); }
+        30% { transform: translateX(-80px); }
+        60% { transform: translateX(-80px); }
+        100% { transform: translateX(0); }
     }
 
     .skill-card-mobile {
