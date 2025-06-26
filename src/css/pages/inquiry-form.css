@@ -81,3 +81,14 @@ fieldset label {
 textarea {
     resize: vertical;
 }
+
+@media (max-width: 768px) {
+    .inquiry-page-container {
+        margin: var(--spacing-13) var(--spacing-2) var(--spacing-5);
+        flex-direction: column;
+    }
+
+    .inquiry-text {
+        text-align: center;
+    }
+}
