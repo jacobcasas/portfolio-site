@@ -32,7 +32,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, {
     threshold: 0.1,
-    rootMargin: '0px 0px -30% 0px'
+    rootMargin: '0px 0px -20% 0px'
 });
 
 window.addEventListener('DOMContentLoaded', () => {
