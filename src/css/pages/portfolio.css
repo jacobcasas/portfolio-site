@@ -1,7 +1,7 @@
 /* Portfolio page style */
 
 .portfolio-container {
-    margin: var(--spacing-13);
+    margin: var(--spacing-container);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-8);
@@ -10,7 +10,7 @@
 .portfolio-row {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: var(--spacing-8);
 }
 
@@ -36,6 +36,10 @@
 }
 
 @media (max-width: 768px) {
+    .portfolio-container {
+        margin: var(--spacing-14)  var(--spacing-5) var(--spacing-2);
+    }
+
     .app-designs-category h2 {
         margin-bottom: var(--spacing-8);
     }

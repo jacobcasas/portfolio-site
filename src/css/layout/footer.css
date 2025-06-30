@@ -15,17 +15,20 @@
     gap: var(--spacing-15);
     align-items: center;
     justify-content: right;
+    padding-right: 3rem;
 }
 
 .footer-icons {
     display: flex;
-    gap: var(--spacing-3);
-    margin-right: 4rem;
+    align-items: center;
+    gap: var(--spacing-2);
+    margin-right: 6rem;
 }
 
 .footer-icons img {
     max-width: 24px;
 }
+
 
 .email-contact:hover {
     text-decoration: underline;
@@ -44,6 +47,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 0;
     }
 
     .footer-icons {
