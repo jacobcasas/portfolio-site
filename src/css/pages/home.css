@@ -162,7 +162,7 @@
 .project-picture-display img {
     position: relative;
     z-index: 1;
-    max-width: 200px;
+    max-width: 300px;
     margin: 0 -25px;
 }
 

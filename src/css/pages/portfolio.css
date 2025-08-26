@@ -13,8 +13,7 @@
 }
 
 .portfolio-row-logo {
-    width: 615px;
-    height: 140px;
+    min-width: 615px;
 }
 
 .portfolio-row-photos {
