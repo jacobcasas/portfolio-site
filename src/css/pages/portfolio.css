@@ -16,6 +16,12 @@
     min-width: 615px;
 }
 
+@media (max-width: 1024px) {
+    .portfolio-row-logo {
+        min-width: 150px;
+    }
+}
+
 .portfolio-row-photos {
     display: flex;
 }
